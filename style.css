@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.caja {
+  background: tomato;
+  color: #eee;
+  padding: 10px;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+.caja1 {
+  background: #09f;
+  /* grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3; */
+  grid-column: span 4;
+  grid-row: span 2;
+}
